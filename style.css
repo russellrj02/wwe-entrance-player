@@ -35,7 +35,6 @@ body {
     margin: 0;
     color: #ffffff;
     text-shadow: 0 0 12px red, 0 0 25px red;
-    font-family: "Segoe UI", "Roboto", Arial, sans-serif;
 }
 
 /* GRID */
@@ -91,6 +90,20 @@ body {
 .modal-content {
     width: 85%;
     max-width: 1000px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* FLASHING BORDER ANIMATION */
+@keyframes flashBorder {
+    0% { box-shadow: 0 0 20px red; border-color: red; }
+    50% { box-shadow: 0 0 40px white; border-color: white; }
+    100% { box-shadow: 0 0 20px red; border-color: red; }
+}
+
+.flashing {
+    animation: flashBorder 1s infinite;
+    border: 4px solid red;
 }
 
 #videoPlayer {
