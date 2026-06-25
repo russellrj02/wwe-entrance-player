@@ -40,7 +40,6 @@ function openVideo(src) {
     modal.style.display = "flex";
     video.play();
 
-    // Add flashing border
     frame.classList.add("flashing");
 }
 
@@ -54,6 +53,5 @@ document.getElementById("closeBtn").addEventListener("click", () => {
     video.src = "";
     modal.style.display = "none";
 
-    // Remove flashing border
     frame.classList.remove("flashing");
 });
