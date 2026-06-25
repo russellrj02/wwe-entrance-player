@@ -118,7 +118,7 @@ body {
 /* BIGGER VIDEO BOX */
 .modal-content {
     width: 95%;
-    max-width: 1400px; /* EVEN BIGGER */
+    max-width: 1400px;
     border-radius: 12px;
     padding: 0;
 }
