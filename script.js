@@ -11,6 +11,12 @@ const wrestlers = [
         image: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/orton.jpg",
         video: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/orton.mp4",
         brand: "attitude"
+    },
+    {
+        name: "Rey Mysterio",
+        image: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/mysterio.jpeg",
+        video: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/mysterio.mp4",
+        brand: "attitude"
     }
 ];
 
