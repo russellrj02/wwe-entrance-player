@@ -5,6 +5,12 @@ const wrestlers = [
         image: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/cena.jpg",
         video: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/cena.mp4",
         brand: "attitude"
+    },
+    {
+        name: "Randy Orton",
+        image: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/orton.jpg",
+        video: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/orton.mp4",
+        brand: "attitude"
     }
 ];
 
