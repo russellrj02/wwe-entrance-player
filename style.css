@@ -36,10 +36,10 @@ body {
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* EXACTLY 5 PER ROW */
     gap: 30px;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -53,15 +53,19 @@ body {
     border: 2px solid #222;
 }
 
+/* ⭐ UNIFORM IMAGE FIX ⭐ */
+.card img {
+    width: 100%;
+    height: 260px;        /* SAME HEIGHT FOR ALL */
+    object-fit: cover;    /* CROPS PERFECTLY */
+    object-position: top; /* KEEPS FACE IN FRAME */
+    border-radius: 10px;
+}
+
 .card:hover {
     transform: scale(1.07);
     border-color: red;
     box-shadow: 0 0 20px red;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 .card h3 {
