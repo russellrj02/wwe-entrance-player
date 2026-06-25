@@ -14,12 +14,7 @@ const wrestlers = [
     }
 ];
 
-// Brand Images
-const brandImages = {
-    attitude: "https://github.com/russellrj02/wwe-entrance-player/releases/download/v1.0/attitude.jpg"
-};
-
-// Load Wrestlers into Grid
+// Load Wrestlers
 const container = document.getElementById("wrestlerContainer");
 
 wrestlers.forEach(wrestler => {
@@ -39,18 +34,26 @@ wrestlers.forEach(wrestler => {
 function openVideo(src) {
     const modal = document.getElementById("videoModal");
     const video = document.getElementById("videoPlayer");
+    const frame = document.getElementById("videoFrame");
 
     video.src = src;
     modal.style.display = "flex";
     video.play();
+
+    // Add flashing border
+    frame.classList.add("flashing");
 }
 
 // Close Modal
 document.getElementById("closeBtn").addEventListener("click", () => {
     const modal = document.getElementById("videoModal");
     const video = document.getElementById("videoPlayer");
+    const frame = document.getElementById("videoFrame");
 
     video.pause();
     video.src = "";
     modal.style.display = "none";
+
+    // Remove flashing border
+    frame.classList.remove("flashing");
 });
