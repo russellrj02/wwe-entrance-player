@@ -1,7 +1,7 @@
 body {
     background: #000;
     color: #fff;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI", "Roboto", Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,13 +13,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 35px 0 10px 0;
+    padding: 40px 0 20px 0;
 }
 
 .wwe-logo {
-    height: 150px; /* BIGGER */
-    margin-bottom: 10px;
-    filter: none; /* REMOVE GLOW */
+    height: 170px; /* BIGGER */
+    margin-bottom: 15px;
+    filter: none; /* NO GLOW */
     transition: 0.25s;
 }
 
@@ -28,13 +28,14 @@ body {
 }
 
 .header-text {
-    font-size: 38px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
-    color: #e6e6e6;
-    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 12px red, 0 0 25px red; /* RED LIGHTING BEHIND TEXT */
+    font-family: "Segoe UI", "Roboto", Arial, sans-serif;
 }
 
 /* GRID */
