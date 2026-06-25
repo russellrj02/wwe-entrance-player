@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 10px 0; /* reduced bottom padding */
+    padding: 40px 0 10px 0;
 }
 
 .wwe-logo {
@@ -100,10 +100,22 @@ body {
     transform: scale(1.2);
 }
 
-/* VIDEO FRAME */
+/* METAL FRAME */
+.metal-frame {
+    padding: 25px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #3a3a3a, #1a1a1a);
+    border: 6px solid #555;
+    box-shadow: 
+        inset 0 0 20px #000,
+        0 0 25px red,
+        0 0 50px rgba(255,0,0,0.4);
+}
+
+/* VIDEO BOX BIGGER */
 .modal-content {
-    width: 85%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1300px; /* BIGGER */
     border-radius: 12px;
     padding: 0;
 }
