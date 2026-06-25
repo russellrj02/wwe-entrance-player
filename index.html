@@ -20,13 +20,17 @@
 
     <!-- Video Modal -->
     <div id="videoModal" class="modal">
-        
-        <!-- X button OUTSIDE the video frame -->
+
+        <!-- X button OUTSIDE -->
         <span id="closeBtn" class="close-outside">&times;</span>
 
-        <div class="modal-content flashing-border" id="videoFrame">
-            <video id="videoPlayer" controls autoplay></video>
+        <!-- Metal frame wrapper -->
+        <div class="metal-frame">
+            <div class="modal-content flashing-border" id="videoFrame">
+                <video id="videoPlayer" controls autoplay></video>
+            </div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
