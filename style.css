@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* HEADER LAYOUT */
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.left-title, .right-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  color: red;
+  text-shadow: 0 0 12px red;
+}
+
+/* FULL-WIDTH RED LINE */
+.divider {
+  width: 100%;
+  height: 5px;
+  background: red;
+  margin: 25px 0 0 0;
+  box-shadow: 0 0 20px red;
+}
+
+/* LOGO */
+.logo-bar img {
+  height: 240px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(255,0,0,0.7));
+  transition: transform 0.2s ease;
+}
+
+.logo-bar img:hover {
+  transform: scale(1.1);
+}
+
+/* SUPERSTAR CARD */
+.superstar-grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px; /* LOWER CENA */
+}
+
+.superstar {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.superstar img {
+  width: 260px;          /* wider */
+  height: auto;          /* full height visible */
+  object-fit: contain;   /* show whole head */
+  background: #000;      /* black bars if needed */
+  border-radius: 12px;
+  border: 4px solid #ff0000;
+  box-shadow: 0 0 20px rgba(255,0,0,0.6);
+}
+
+.superstar:hover {
+  transform: scale(1.05);
+}
+
+.superstar p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TV FRAME */
+.tv-frame {
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  border: 10px solid #333;
+  box-shadow: 0 0 40px rgba(255,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.tv-frame.playing {
+  box-shadow: 0 0 60px red;
+}
+
+.tv-frame video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+/* VIDEO HIDDEN UNTIL PLAY */
+#videoPlayer {
+  display: none;
+}
+
+.close {
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 15px;
+}

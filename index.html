@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WWE Titantron Selector</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="title-row">
+    <span class="left-title">ENTRANCE</span>
+
+    <div class="logo-bar">
+      <img src="videos/attitude.jpg" alt="Attitude Era Logo">
+    </div>
+
+    <span class="right-title">PLAYER</span>
+  </div>
+
+  <div class="divider"></div>
+</header>
+
+<!-- Cena Card -->
+<div class="superstar-grid">
+  <div class="superstar" onclick="openVideo('videos/cena.mp4')">
+    <img src="videos/cena.jpg" alt="John Cena">
+    <p>John Cena</p>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span id="closeBtn" class="close">&times;</span>
+
+    <div class="tv-frame">
+      <video id="videoPlayer" controls autoplay></video>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
