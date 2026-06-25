@@ -104,9 +104,11 @@ body {
     transform: scale(1.2);
 }
 
-/* RED METAL FRAME */
+/* ⭐ FIXED METAL FRAME SIZE ⭐ */
 .metal-frame {
-    padding: 20px;
+    padding: 15px;
+    max-width: 1200px; /* prevents huge titantrons */
+    margin: auto;
     border-radius: 18px;
     background: linear-gradient(145deg, #5a0000, #2a0000);
     border: 6px solid #aa0000;
@@ -119,12 +121,20 @@ body {
     align-items: center;
 }
 
-/* VIDEO BOX */
+/* ⭐ FIXED VIDEO BOX SIZE ⭐ */
 .modal-content {
-    width: 95%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1200px; /* balanced size */
     border-radius: 12px;
     padding: 0;
+}
+
+/* ⭐ FIXED VIDEO SIZE ⭐ */
+#videoPlayer {
+    width: 100%;
+    max-height: 650px; /* prevents Kurt Angle from exploding */
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 /* FLASHING BORDER */
@@ -137,9 +147,4 @@ body {
 .flashing {
     animation: flashBorder 1s infinite;
     border: 4px solid red;
-}
-
-#videoPlayer {
-    width: 100%;
-    border-radius: 10px;
 }
