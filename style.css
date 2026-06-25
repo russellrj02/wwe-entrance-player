@@ -13,18 +13,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 10px 0; /* reduced bottom padding */
 }
 
 .wwe-logo {
     height: 170px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     filter: none;
     transition: 0.25s;
-}
-
-.wwe-logo:hover {
-    transform: scale(1.05);
 }
 
 .header-text {
@@ -87,14 +83,32 @@ body {
     align-items: center;
 }
 
+/* X BUTTON OUTSIDE */
+.close-outside {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 55px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.2s;
+}
+
+.close-outside:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* VIDEO FRAME */
 .modal-content {
     width: 85%;
     max-width: 1000px;
     border-radius: 12px;
-    padding: 10px;
+    padding: 0;
 }
 
-/* FLASHING BORDER ANIMATION */
+/* FLASHING BORDER */
 @keyframes flashBorder {
     0% { box-shadow: 0 0 20px red; border-color: red; }
     50% { box-shadow: 0 0 40px white; border-color: white; }
@@ -109,12 +123,4 @@ body {
 #videoPlayer {
     width: 100%;
     border-radius: 10px;
-}
-
-.close {
-    color: white;
-    font-size: 40px;
-    float: right;
-    cursor: pointer;
-    margin-bottom: 10px;
 }
